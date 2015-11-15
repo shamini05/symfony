@@ -1,0 +1,13 @@
+# src/OC/PlatformBundle/Resources/config/routing.yml
+
+oc_platform_home:
+    path:      /
+    defaults:  { _controller: ArticleBundle:Advert:index }
+    
+oc_platform_view:
+    path:  	/advert/{id}
+    defaults:  { _controller: ArticleBundle:Advert:view }
+    
+oc_platform_add:
+    path:    	/add
+    defaults:  { _controller:ArticleBundle:Advert:add }
